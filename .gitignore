@@ -1,0 +1,39 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python bytecode & caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Environment files with secrets
+.env
+.env.*
+!.env.example
+
+# Agent configs & telemetry logs
+.agents/
+.gemini/
+*.webm
+
+# Application database artifacts
+*.db
+safety_audit.db
+
+# Editor and OS metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Generated data and results
+results/
+data/corpus/
+data/ground_truth/
+data/bm25_*.pkl
+qdrant_data/
