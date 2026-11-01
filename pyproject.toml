@@ -63,10 +63,14 @@ select = ["E", "F", "I", "N", "W", "UP"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["."]
 markers = [
     "integration: marks tests requiring external services (Qdrant, APIs)",
 ]
 asyncio_mode = "auto"
+filterwarnings = [
+    "ignore:.*symlink.*:UserWarning",
+]
 
 [build-system]
 requires = ["hatchling"]
